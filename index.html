@@ -58,6 +58,20 @@
             border-radius: 25px;
             font-size: 14px;
         }
+
+        .footer {
+            text-align: center;
+        }
+
+        .menu {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+        }
+
+        .footer-menu {
+            list-style: none;
+        }
     </style>
 </head> 
 
@@ -66,25 +80,25 @@
         <section id="home">
             <h2><strong>Macaron Mood</strong></h2>
             <nav>
-            <ul>
-                <li><a href="#home">Головна</a></li>
-                <li><a href="#about">Про нас</a></li>
-                <li><a href="#flavour">Смаки</a></li>
-                <li><a href="#contacts">Контакти</a></li>
-            </ul>
-        </nav>
-        <img src="./icons/Inst.png" alt="instagram" width="40">
-        <img src="./icons/Facebook.png" alt="facebook" width="40">
-        <img src="./icons/TikTok.png" alt="tiktok" width="40">
-        <img src="./icons/YouTube.png" alt="youtube" width="40">
-        <br>
-        <h1><strong>Макаронс, які створюють настрій</strong></h1>
-        <p>Французькі десерти ручної роботи з натуральних інгредієнтів</p>
-        <img src="./images/macarons.webp" alt="macarons" width="350">
-        <br>
-        <button>Замовити зараз</button>
-        <br>
-        <br>
+                <ul class="menu">
+                    <li><a href="#home">Головна</a></li>
+                    <li><a href="#about">Про нас</a></li>
+                    <li><a href="#flavour">Смаки</a></li>
+                    <li><a href="#contacts">Контакти</a></li>
+                </ul>
+            </nav>
+            <img src="./icons/Inst.png" alt="instagram" width="40">
+            <img src="./icons/Facebook.png" alt="facebook" width="40">
+            <img src="./icons/TikTok.png" alt="tiktok" width="40">
+            <img src="./icons/YouTube.png" alt="youtube" width="40">
+            <br>
+            <h1><strong>Макаронс, які створюють настрій</strong></h1>
+            <p>Французькі десерти ручної роботи з натуральних інгредієнтів</p>
+            <img src="./images/macarons.webp" alt="macarons" width="350">
+            <br>
+            <button>Замовити зараз</button>
+            <br>
+            <br>
         </section>
     </header>
 
@@ -98,30 +112,33 @@
 
         <section id="flavour">
             <h2><strong>Наші смаки</strong></h2>
+            <article>
             <img src="./images/makaruny.jpg" alt="blueberry macaron" width="150" height="163">
-            <h3><strong></strong>Лохина</h3>
+            <h3><strong>Лохина</strong></h3>
             <p>55 грн</p>
             <button>Купити</button>
-            <br>
-            <br>
+            </article>
+            
+            <article>
             <img src="./images/le.webp" alt="blackberry macaron" width="150" height="163">
-            <h3><strong></strong>Чорниця</h3>
+            <h3><strong>Чорниця</strong></h3>
             <p>60 грн</p>
             <button>Купити</button>
-            <br>
-            <br>
+            </article>
+
+            <article>
             <img src="./images/raspberry.jpg" alt="raspberry macaron" width="150" height="163">
-            <h3><strong></strong>Малина</h3>
+            <h3><strong>Малина</strong></h3>
             <p>58 грн</p>
             <button>Купити</button>
-            <br>
-            <br>
+            </article>
+            
+            <article>
             <img src="./images/pistachio.jpg" alt="pistachio macaron" width="150" height="163">
-            <h3><strong></strong>Фісташка</h3>
+            <h3><strong>Фісташка</strong></h3>
             <p>65 грн</p>
             <button>Купити</button>
-            <br>
-            <br>
+            </article>
         </section>
 
         <section>
@@ -138,7 +155,7 @@
             <br>
         </section>
         
-        <section>
+        <section class="question">
             <h2><strong>Маєш питання?</strong></h2>
             <label>
                 <input type="text" name="question" placeholder="Питання...">
@@ -150,31 +167,27 @@
     </main>
 
     <footer>
-        <section id="contacts">
-            <p>
-            <pre>
-                <h2><strong>Macaron Mood</strong></h2>
-                <img src="./icons/Inst.png" alt="instagram" width="40">
-                <img src="./icons/Facebook.png" alt="facebook" width="40">
-                <img src="./icons/TikTok.png" alt="tiktok" width="40">
-                <img src="./icons/YouTube.png" alt="youtube" width="40">
-                <h2>MENU</h2>
-                <nav>
-                    <ul>
-                        <li><a href="#home">Головна</a></li>
-                        <li><a href="#about">Про нас</a></li>
-                        <li><a href="#flavour">Смаки</a></li>
-                        <li><a href="#contacts">Контакти</a></li>
-                    </ul>
-                </nav>
-                <h2>CONTACTS</h2>
-                <p>✉️ Email: <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">samusevychdiana@gmail.com</a></p>
-                <p>✈️ Telegram: @finkaua</p>
-                <br>
-                <p>Навчальний проект курсу Frontend</p>
-                <p>&copy;2026 Проект створено Самусевич Діаною</p>
-            </pre>
-        </p>
+        <section id="contacts" class="footer">
+            <h2><strong>Macaron Mood</strong></h2>
+            <img src="./icons/Inst.png" alt="instagram" width="40">
+            <img src="./icons/Facebook.png" alt="facebook" width="40">
+            <img src="./icons/TikTok.png" alt="tiktok" width="40">
+            <img src="./icons/YouTube.png" alt="youtube" width="40">
+            <h2>MENU</h2>
+            <nav>
+                <ul class="footer-menu">
+                    <li><a href="#home">Головна</a></li>
+                    <li><a href="#about">Про нас</a></li>
+                    <li><a href="#flavour">Смаки</a></li>
+                    <li><a href="#contacts">Контакти</a></li>
+                </ul>
+            </nav>
+            <h2>CONTACTS</h2>
+            <p>✉️ Email: <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">samusevychdiana@gmail.com</a></p>
+            <p>✈️ Telegram: @finkaua</p>
+            <br>
+            <p>Навчальний проект курсу Frontend</p>
+            <p>&copy;2026 Проект створено Самусевич Діаною</p>
         </section>
     </footer>
 </body>
